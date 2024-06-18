@@ -69,3 +69,20 @@ h3 {
     font-size: 2.5rem;
   }
 }
+
+.img {
+  max-width: 100%; /* Ensures the image does not exceed its container's width */
+  height: auto; /* Allows the image to scale proportionally */
+  display: block; /* Ensures the image behaves as a block element */
+  margin: 20px auto; /* Centers the image horizontally with some margin */
+  max-height: 400px; /* Sets a maximum height for the image */
+  border-radius: 8px; /* Adds a slight border radius for a softer look */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect */
+}
+
+.img:hover {
+  transform: scale(
+    1.05
+  ); /* Slightly scales up the image on hover for an interactive effect */
+}

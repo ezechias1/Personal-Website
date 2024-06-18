@@ -1,5 +1,5 @@
 import Banner from "./Banner";
-// import Picture from "./assets/images/Picture.jpg";
+import Picture from "./assets/images/Picture.jpg";
 
 function Heading() {
   return (
@@ -10,7 +10,7 @@ function Heading() {
       <h2>and I am a...</h2>
       <h3>SoftWare Developer</h3>
 
-      {/* <img className="img" src={Picture.jpg} alt="Ezechias" /> */}
+      {<img className="img" src={Picture} alt="Ezechias" />}
     </>
   );
 }
