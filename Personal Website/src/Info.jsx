@@ -1,9 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import "./info.css";
+
 function Info() {
   return (
     <>
-      <h1 className="info">About Me</h1>
+      <h1 className="info" id="About">
+        About Me
+      </h1>
       <p>
         Hey there, I'm Ezechias Mulamba, born and raised in the sunny vibes of
         Cape Town, South Africa, back in 2004. From early on, I saw how tech was
@@ -20,7 +24,9 @@ function Info() {
         cook up cool stuff.
       </p>
       <br />
-      <h1 className="info">Projects</h1>
+      <h1 className="info" id="Projects">
+        Projects
+      </h1>
       <p>
         While studying software development, I undertook my first project using
         HTML and CSS. It was an enjoyable experience to learn new skills and
@@ -60,7 +66,7 @@ function Info() {
         You can check out all my projects on GitHub by clicking{" "}
         <a href="https://github.com/ezechias1?tab=repositories"> here</a>."
       </p>
-      <h1>Contacts</h1>
+      <h1 id="Contacts">Contacts</h1>
       <ion-icon name="call-sharp"></ion-icon>
       (+27)682531230
       <br />

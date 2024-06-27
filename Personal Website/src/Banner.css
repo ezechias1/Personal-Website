@@ -1,4 +1,4 @@
-.Projects {
+/* .Projects {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
@@ -19,41 +19,68 @@
 }
 
 .Banner {
-  display: flex; /* Use flexbox for horizontal alignment */
-  justify-content: space-between; /* Space items evenly across */
-  align-items: flex-start; /* Align items at the start */
-  background-color: #ffffff; /* Background color */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  position: sticky; /* Sticky position to stick to the top */
-  top: 0; /* Stick to the top */
-  z-index: 100; /* Ensure it is above other content */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  background-color: #ffffff; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  position: sticky; 
+  top: 0; 
+  z-index: 100; 
 }
 
 .Banner nav {
-  padding: 10px 20px; /* Padding around each navigation item */
+  padding: 10px 20px;
 
-  text-transform: uppercase; /* Convert text to uppercase */
-  text-align: center; /* Center align text */
+  text-transform: uppercase; 
+  text-align: center; 
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .Banner nav {
-    font-size: 1rem; /* Decrease font size for smaller screens */
-    padding: 8px 16px; /* Adjust padding */
+    font-size: 1rem; 
+    padding: 8px 16px; 
   }
 }
 
 @media (max-width: 480px) {
   .Banner {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center; /* Center align items */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .Banner nav {
-    font-size: 0.8rem; /* Further decrease font size for mobile screens */
-    padding: 6px 12px; /* Further adjust padding */
-    width: 100%; /* Full width for each item */
-    text-align: center; /* Center align text */
+    font-size: 0.8rem; 
+    padding: 6px 12px; 
+    width: 100%;
+    text-align: center; 
   }
+} */
+
+.Banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Dark background color */
+  z-index: 1000; /* Ensure it's above other content */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff; /* White text color */
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }

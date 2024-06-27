@@ -1,0 +1,36 @@
+.info-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff; /* White background color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  position: relative;
+  z-index: 900; /* Ensure it's above other content */
+}
+
+.info-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333; /* Dark text color */
+}
+
+.info-container p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.info-container a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
+}
+
+.info-container a:hover {
+  text-decoration: underline;
+}
+
+/* Icon styles */
+ion-icon {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
