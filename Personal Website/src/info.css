@@ -34,3 +34,87 @@ ion-icon {
   margin-right: 0.5rem;
   font-size: 1.5rem;
 }
+
+.zoom-in {
+  transform: scale(1.1); /* Scale video on hover */
+}
+
+.video-container {
+  overflow: hidden; /* Hide overflow for smoother animation */
+}
+
+/* Banner.css */
+
+.Banner a {
+  color: black; /* Make text transparent */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.Banner a:hover {
+  color: #007bff; /* Change text color on hover to a shade of blue (#007bff) */
+}
+
+/* info.css */
+
+.info {
+  max-width: 800px; /* Set maximum width for the content */
+  margin: 0 auto; /* Center align the content */
+  font-family: Arial, sans-serif; /* Change font family */
+  font-size: 1.1em; /* Increase font size slightly */
+  line-height: 1.6; /* Adjust line height for readability */
+}
+
+.pod-video {
+  display: inline-block; /* Ensures it respects width and centers correctly */
+  margin: 0 auto; /* Centers the video horizontally */
+  width: 100%; /* Ensures the video takes full width available */
+  max-width: 800px; /* Limiting maximum width to prevent oversized display */
+}
+
+.img1 {
+  width: 30%;
+  margin-left: 40%;
+}
+
+.project-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project {
+  margin-bottom: 20px; /* Add space between projects */
+}
+
+.video-container {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Align items with space between them */
+}
+
+.project-video {
+  flex: 1; /* Take remaining space */
+  max-width: 50%; /* Limit width to 50% of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container */
+}
+
+.img1 {
+  flex: 1; /* Take remaining space */
+  max-width: 50%; /* Limit width to 50% of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container */
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  .project-video,
+  .img1 {
+    width: 100%; /* Take full width on smaller screens */
+    max-width: none; /* Reset max-width */
+    margin-bottom: 10px; /* Margin between video and image */
+  }
+}

@@ -1,14 +1,9 @@
 import Banner from "./Banner";
 import Picture from "./assets/images/Picture.jpg";
-import black from "./assets/images/black.jpg";
 
 function Heading() {
   return (
     <>
-      <div
-        className="heading-container"
-        style={{ backgroundImage: `url(${black})` }}
-      ></div>
       <Banner />
       <h1>Hi I am,</h1>
       <div className="name">Ezechias Mulamba</div>

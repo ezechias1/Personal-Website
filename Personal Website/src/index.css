@@ -1,37 +1,53 @@
-/* h1 {
-  font-size: 2rem; 
-  font-family: "Arial", sans-serif; 
-  text-align: center; 
-  margin-bottom: 10px; 
+h1 {
+  font-size: 2rem;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .name {
-  font-size: 3rem; 
-  font-weight: bold; 
-  font-family: "Montserrat", sans-serif; 
-  text-align: center; 
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-  font-size: 1.5rem; 
-  font-family: "Roboto", sans-serif; 
-  text-align: center; 
-  margin-top: 10px; 
-  margin-bottom: 10px; 
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 h3 {
-  font-size: 4rem; 
-  font-family: "Comic Sans MS", cursive; 
-  text-align: center; 
-  margin-top: 20px; 
-  margin-bottom: 20px;  
+  font-size: 4rem;
+  font-family: "Comic Sans MS", cursive;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-*/
+
+.name,
+h2,
+h3 {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @media (max-width: 768px) {
   h1 {
@@ -82,96 +98,4 @@ h3 {
 
 .img:hover {
   transform: scale(1.05);
-}
-
-.heading-container {
-  position: relative;
-  height: 100vh; /* Ensure full viewport height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #333;
-  background-color: #f2f2f2; /* Light background color */
-  overflow: hidden; /* Hide overflow to prevent scrolling */
-}
-
-.name {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin-top: 1rem;
-}
-
-/* Add animations to elements */
-.name,
-h2,
-h3 {
-  animation: fadeInUp 1s ease-out;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.heading-container {
-  position: relative;
-  height: 100vh; /* Ensure full viewport height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #333;
-  overflow: hidden; /* Hide overflow to prevent scrolling */
-  background-image: url("path/to/your/background-image.jpg");
-  background-size: cover; /* Cover the entire container */
-  background-position: center; /* Center the background image */
-}
-
-.name {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #fff; /* Adjust text color for better readability */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for contrast */
-}
-
-.img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin-top: 1rem;
-}
-
-/* Add animations to elements */
-.name,
-h2,
-h3 {
-  animation: fadeInUp 1s ease-out;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
