@@ -72,11 +72,6 @@ ion-icon {
   max-width: 800px; /* Limiting maximum width to prevent oversized display */
 }
 
-.img1 {
-  width: 30%;
-  margin-left: 40%;
-}
-
 .project-container {
   max-width: 800px;
   margin: 0 auto;
@@ -117,4 +112,11 @@ ion-icon {
     max-width: none; /* Reset max-width */
     margin-bottom: 10px; /* Margin between video and image */
   }
+}
+
+.img2 {
+  display: block; /* Ensures the image is block-level */
+  margin: 0 auto; /* Center horizontally */
+  max-width: 60%; /* Limit the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
 }

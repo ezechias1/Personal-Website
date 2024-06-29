@@ -1,25 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useRef, useState } from "react";
-import pod from "./assets/vids/pod.mp4";
 import "./info.css";
-import book from "./assets/images/book.png"; // Assuming it's a PNG file
+import pod from "./assets/vids/pod.mp4";
+import book from "./assets/images/book.png";
 import BookVid from "./assets/vids/BookVid.mp4";
+import resume from "./assets/images/resume.png";
 
 function Info() {
-  const videoRef1 = useRef(null);
-
-  const [isHovered1, setIsHovered1] = useState(false);
-
-  const handleVideo1Hover = () => {
-    setIsHovered1(true);
-    videoRef1.current.play(); // Start playing the first video on hover
-  };
-
-  const handleVideo1Leave = () => {
-    setIsHovered1(false);
-    videoRef1.current.pause(); // Pause the first video when hover ends
-  };
-
   return (
     <>
       <h1 className="info" id="About">
@@ -51,6 +37,7 @@ function Info() {
         apply them to build something meaningful. You can check out the project
         here:{" "}
         <a href="https://main--digtal-resume.netlify.app/">Digital Resume</a>
+        <img className="img2" src={resume} alt="Book" />
         <br />
         <br />
         <h2>Debugging JavaScript Project</h2>
@@ -74,14 +61,11 @@ function Info() {
           <div className="project">
             <div className="video-container">
               <video
-                ref={videoRef1}
-                className={`project-video${isHovered1 ? "zoom-in" : ""}`}
+                className="project-video"
                 width="320"
                 height="240"
                 controls
                 loop
-                onMouseEnter={handleVideo1Hover}
-                onMouseLeave={handleVideo1Leave}
               >
                 <source src={BookVid} type="video/mp4" />
               </video>
